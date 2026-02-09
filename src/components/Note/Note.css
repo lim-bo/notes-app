@@ -1,0 +1,23 @@
+.note {
+    inline-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--note-bg-color);
+}
+
+.note__content {
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+.note__content-editable {
+    resize: none;
+    min-block-size: 100px;
+}
+
+.note__delete-btn {
+    block-size: 50px;
+}

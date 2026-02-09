@@ -1,0 +1,21 @@
+.add-note-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+#text {
+    resize: none;
+    padding: 10px;
+    block-size: 100%;
+    min-block-size: 200px;
+    inline-size: 100%;
+    max-inline-size: 200px;
+}
+
+.add-note-form__add-button {
+    padding: 10px;
+    block-size: 50px;
+}
