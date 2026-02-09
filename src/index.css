@@ -3,3 +3,10 @@
 *::after {
   box-sizing: border-box;
 }
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
