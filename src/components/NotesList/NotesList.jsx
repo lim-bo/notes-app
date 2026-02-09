@@ -4,9 +4,9 @@ import Note from "../Note/Note";
 import { loadNotes } from "./notes_storage";
 import AddNote from "../AddNote/AddNote";
 
-export default function NotesList({ notes, onDelete }) {
+export default function NotesList({ notes, onDelete, onEdit }) {
     return (
-        <>
+        <div className="notes-list-wrap section">
             <ul className="notes-list">
                 { notes.map( note => 
                     <Note 
@@ -14,11 +14,11 @@ export default function NotesList({ notes, onDelete }) {
                         id={note.id}
                         content={note.content}
                         onDelete={onDelete}
+                        onEdit={onEdit}
                     >
-                    </Note>
-                )}
-            </ul>
-        </>
-        
+                    </Note>)
+                }
+            </ul> 
+        </div>
     );
 }

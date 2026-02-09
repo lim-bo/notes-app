@@ -21,14 +21,32 @@ function App() {
     );
   }
 
+  const editNote = (id, newText) => {
+    setNotes( prev => 
+      prev.map(note => {
+        if (note.id === id) {
+          return {
+            ...note,
+            content: newText
+          }
+        } else {
+          return note;
+        }
+      })
+    )
+  }
+
   useEffect(() => {
     saveNotes(notes);
   }, [notes]);
 
   return (
     <>
+      <header className="header section">
+        <h1>Note It</h1>
+      </header>
       <AddNote onAddNote={addNote}></AddNote>
-      <NotesList notes={notes} onDelete={deleteNote}></NotesList>
+      <NotesList notes={notes} onDelete={deleteNote} onEdit={editNote}></NotesList>
     </>
   )
 }
