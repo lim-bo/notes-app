@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useState } from "react";
 import "./AddNote.css";
 
 export default function AddNote({ onAddNote }) {

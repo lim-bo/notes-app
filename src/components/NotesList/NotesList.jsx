@@ -1,8 +1,5 @@
-import { useCallback, useState } from "react";
 import "./NotesList.css";
 import Note from "../Note/Note";
-import { loadNotes } from "./notes_storage";
-import AddNote from "../AddNote/AddNote";
 
 export default function NotesList({ notes, onDelete, onEdit }) {
     return (

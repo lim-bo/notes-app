@@ -1,4 +1,4 @@
-import { use, useRef, useState } from "react";
+import { useState } from "react";
 import "./Note.css";
 
 export default function Note({ id, content, onDelete, onEdit }) {
